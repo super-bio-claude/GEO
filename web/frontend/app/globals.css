@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 250, 250, 250;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-cancer {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .badge-neurological {
+    @apply bg-purple-100 text-purple-800;
+  }
+
+  .badge-metabolic {
+    @apply bg-amber-100 text-amber-800;
+  }
+
+  .badge-aging {
+    @apply bg-indigo-100 text-indigo-800;
+  }
+
+  .badge-high {
+    @apply bg-red-100 text-red-800;
+  }
+
+  .badge-moderate {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .badge-low {
+    @apply bg-green-100 text-green-800;
+  }
+}

@@ -1,0 +1,145 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+.venv/
+ENV/
+env/
+
+# ===========================
+# R
+# ===========================
+.Rhistory
+.Rdata
+.RData
+*.Rproj.user/
+.Rproj.user/
+
+# ===========================
+# Node.js / Next.js
+# ===========================
+node_modules/
+.next/
+out/
+.swc/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# ===========================
+# Data Files (Large)
+# ===========================
+data/chromadb*/
+data/msigdb_gene_sets.json
+data/raw/
+data/processed/
+data/normalized/
+data/geo_test/
+data/disgenet/
+data/disease_db/
+data/msigdb/
+data/*.json
+*.h5ad
+*.rds
+*.RDS
+*.parquet
+
+# ===========================
+# Database
+# ===========================
+db/*.db
+db/*.sqlite
+db/*.sqlite3
+
+# ===========================
+# Results (Generated)
+# ===========================
+results/
+
+# ===========================
+# Jupyter Notebooks
+# ===========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ===========================
+# Web Platform
+# ===========================
+web/backend/uploads/*
+!web/backend/uploads/.gitkeep
+web/backend/reports/*
+!web/backend/reports/.gitkeep
+web/frontend/.next/
+
+# ===========================
+# IDEs and Editors
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# ===========================
+# OS Files
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ===========================
+# Logs
+# ===========================
+logs/
+*.log
+
+# ===========================
+# Testing
+# ===========================
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
+
+# ===========================
+# Misc
+# ===========================
+*.tsbuildinfo
+.vercel
