@@ -34,7 +34,7 @@ register(MulticoreParam(4))
 run_deseq2_analysis <- function(counts_file, metadata_file, output_dir,
                                  design_formula = "~ condition",
                                  contrast_var = "condition",
-                                 numerator = "compress",
+                                 numerator = "treatment",
                                  denominator = "control") {
 
     cat("=== DESeq2 Analysis with apeglm ===\n")
@@ -47,12 +47,12 @@ run_deseq2_analysis <- function(counts_file, metadata_file, output_dir,
     # ---------------------------------------------------------------------------
     cat("\n[1/6] Loading data...\n")
 
-    # Load counts matrix
-    counts <- read.table(counts_file, header = TRUE, row.names = 1, sep = "\t")
+    # Load counts matrix (check.names = FALSE to preserve original column names)
+    counts <- read.table(counts_file, header = TRUE, row.names = 1, sep = "\t", check.names = FALSE)
     cat(sprintf("  Loaded counts: %d genes x %d samples\n", nrow(counts), ncol(counts)))
 
     # Load metadata
-    metadata <- read.csv(metadata_file, row.names = 1)
+    metadata <- read.csv(metadata_file, row.names = 1, check.names = FALSE)
     cat(sprintf("  Loaded metadata: %d samples\n", nrow(metadata)))
 
     # Ensure sample order matches
